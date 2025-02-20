@@ -16,7 +16,7 @@ To set up the Task App locally, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/faisalfjrii/task-app.git
+    git clone https://github.com/faisalfjri/task-app.git
     cd task-app
     ```
 
