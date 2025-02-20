@@ -1,0 +1,20 @@
+services:
+    siputteri:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: faisalfjri/siputteri
+        container_name: siputteri
+        restart: unless-stopped
+        working_dir: /var/www/html/siputteri
+        volumes:
+            - ./:/var/www/html/siputteri
+        ports:
+            - 8012:8012
+        networks:
+            - shared_network
+
+networks:
+    shared_network:
+        driver: bridge
+        name: shared_network
